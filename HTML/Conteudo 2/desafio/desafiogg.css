@@ -1,0 +1,188 @@
+@charset
+*{
+    margin:auto
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face{
+    font-family: 'android';
+    src: url(Nova\ pasta/fontes/idroid.otf) format(opentype);
+}
+
+    
+
+body{
+    background:#174A0D
+    
+}
+
+header{
+    background-color:#87EE72 ;
+    font-family: 'Bebas+neue' ,monospace;
+    text-align: center;
+    color: snow;
+    font-size: 1.5em;
+  margin-top: -32px;
+  margin-left: -15px;
+  margin-right: -15px;
+ 
+  
+ 
+}
+header > nav {
+    text-align: left;
+    background-color: #3CA90C;
+
+}
+header > nav a {
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 10px;
+    
+   
+}
+header > nav h1 {
+  margin: 10px;
+}
+
+    
+
+header > nav a:visited{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+header > nav #teste {
+    margin-left: 10px;
+}
+
+main{
+    background-color: white;
+    margin: -26px 200px 20px 200px;
+    font: 1.5em arial,helvetica,sans-serif;
+    color: #3B5740;
+    margin: auto;
+    min-width: 320;
+    max-width:800 ;
+
+}
+
+.idroid{
+    font-family: 'android', monospace;
+    
+    padding-left: 10px;
+    background-image: linear-gradient(45deg,#C1E8C8,#E1FAE5,white);
+    background-attachment: fixed;
+    margin: 18px 8px 3px 4px;
+}
+
+
+  #tech{
+    color: #4BEB6B;
+    font-family: 'android', monospace;
+    font-size: 2em;
+   padding-left: 10px;
+
+  }
+
+ 
+
+
+  
+  main > article .video{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background-color: #1A5740;
+    margin: 20,20,20,20;
+
+
+  }
+
+
+  
+  
+
+  main > article .idroid2
+  {
+    background-color: #1A5740;
+    font-family: 'android', monospace;
+    color: #051b13; 
+    margin: 11px 12px -2px 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 9px 13px 0px 0px;
+    box-shadow: 2px 4px 14px 0px black;
+  }
+  
+ article > aside {
+    background-color: #C1E8C2;
+    margin: -27px 12px 3px 19px;
+ }
+ 
+ main > article p
+ {
+    padding: 10px 10px 10px 10px;
+    text-indent: 20px;
+}
+ 
+article > aside table {
+    text-decoration: underline;
+}
+
+  main > article span
+  {
+    color: rgb(111, 187, 35);
+    font-weight: bolder;
+  }
+
+  main > article .link 
+  {
+    text-decoration: none;
+  }
+
+   main > article > aside .link {
+    text-decoration: none;
+  }
+
+  aside{
+    border-radius: 1px 1px 23px 23px
+  }
+  div {
+background-color: #051b13;
+  }
+
+  div > .video {
+    
+    
+  }
+
+  footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px -20px -20px -20px;
+
+  }
+
+  footer > .name
+  {
+    color: red;
+  }
+main > article abbr 
+{
+    text-decoration: none;
+}
+span:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+img {
+    width: 100%;
+}

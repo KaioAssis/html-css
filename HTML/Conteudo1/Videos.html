@@ -1,0 +1,144 @@
+<!doctype html> <!-- Indicando que a pagina esta em HTML-->
+<html lang="pt-br"><!-- Indicando a linguagem que ira ser utilizada-->
+
+<head> <!--Inicio do cabecalho-->
+
+    <meta charset="utf-8">  <!--Inclusao de Caracteres Especiais-->
+    <meta name="author" content="kaio">  <!--Nome do criador Da pagina-->
+    <meta name="descripttion" content="html5,css,javascript"> <!--Descricao do que ira ter na pagina-->
+    <meta name="keywords" content="html5,css,javascript">  <!-- Palavras Chaves Para auxiliar na pesquisa-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--ira ocupar 100 a tela visivel-->
+    <link rel="shortcut icon" href="Imagem/imagem.ico/games_icon-icons.com_76710.ico" type="image/x-icon">
+    <title> Videos </title> <!--Titulo da pagina -->
+
+    <link rel="stylesheet" href="style.css"> <!--Linkando Estilizacao da pagina em CSS-->
+
+</head><!--Fim Do cabecalho-->
+
+<body><!--Inicio do corpo-->
+    <h1 class="modulo">Modulo 1</h1>
+    <h1 class="titulo"> HTML: Videos</h1>
+    <p>Os vídeos em HTML são elementos que podem ser incorporados em páginas da web para exibir conteúdo audiovisual. Eles são inseridos por meio de tag e oferecem funções para controlar a reprodução, pausa, avanço e retrocesso do vídeo.</p>
+    <p class="small">*Cuidado com direitos autorais.</p>
+    <h2>Formatos de Vídeo e suas Utilidades</h2>
+    <ul>
+      <li>
+        <strong>AVI (Audio Video Interleave):</strong> Um formato antigo que pode conter áudio e vídeo em um único arquivo. Amplamente suportado, mas pode resultar em tamanhos de arquivo grandes.
+      </li>
+      <li>
+        <strong>MP4 (MPEG-4 Part 14):</strong> Um formato popular com compressão eficiente, boa qualidade e compatibilidade com a maioria dos dispositivos e plataformas. Amplamente utilizado para streaming de vídeo.
+      </li>
+      <li>
+        <strong>MKV (Matroska Video):</strong> Um formato de contêiner flexível que suporta vídeo, áudio, legendas e outros metadados. Amplamente utilizado para armazenar filmes, programas de TV e vídeos em alta definição.
+      </li>
+      <li>
+        <strong>MOV (QuickTime Movie):</strong> Um formato desenvolvido pela Apple, comumente usado em dispositivos Apple e aplicativos como o QuickTime. Adequado para vídeos de alta qualidade.
+      </li>
+      <li>
+        <strong>WMV (Windows Media Video):</strong> Um formato desenvolvido pela Microsoft, amplamente suportado no Windows. Usado para streaming de vídeo e reprodução em dispositivos Windows.
+      </li>
+      <li>
+        <strong>FLV (Flash Video):</strong> Um formato usado principalmente para transmissão pela Internet. Comumente utilizado em plataformas de vídeo online.
+      </li>
+      <li>
+        <strong>WebM:</strong> Um formato de vídeo de código aberto desenvolvido para a web. Amplamente suportado por navegadores modernos, utilizado para vídeos online e streaming.
+      </li>
+    </ul>
+    <p class="small">*voce pode ate se assustar com a quantidade de formatos, mas 90% das vezes iremos trabalhar com mp4,webm e OGV.</p>
+
+    <hr>
+
+    <h2>Tipos de Resolução no YouTube</h2>
+    <p>toda vez que vamos baixar um video da internet, a mauioria deles disponibilizam diversos tipo de resolucao. aqui estao algumas:</p>
+        <ul>
+            <li>240p: A resolução mais baixa disponível no YouTube.</li>
+            <li>360p: Qualidade um pouco melhor do que 240p, adequada para dispositivos com telas pequenas.</li>
+            <li>480p: Qualidade decente, adequada para laptops, tablets e monitores menores.</li>
+            <li>720p: Alta definição (HD), ideal para a maioria dos casos de uso.</li>
+            <li>1080p: Full HD, com detalhes nítidos em telas maiores.</li>
+            <li>1440p: Quad HD ou 2K, proporcionando imagens mais nítidas e detalhadas.</li>
+            <li>2160p: 4K ou Ultra HD, a mais alta qualidade disponível no YouTube.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Frame Rate</h2>
+        <p>A maioria dos conteudos nao vao falar sobre frame rate, mas é um aspecto muito importante para uma plataforma com video.</p>
+        <p>O recomendado para um site convencional é de 30 <abbr title="Frames Per Second">FPS</abbr>, o olho humano nao treinado nao nota tanta diferenca acima disso.</p>
+        <p>Caso seja uma plataforma de jogos ou algo do tipo, é recomendado que seja a 60 FPS.</p>
+        
+        <h3>Comparando a taxa de atualizacao.</h3>
+        <img src="Imagem/Imagens/fps comparacao.gif" alt="comparando fps" width="200" height="150">
+        
+        <hr>
+
+
+
+        <h2>Para colocar videos usamos essa a tag &lt;VIDEO&gt;</h2>
+        <p>  &lt;video src="Videos/jaaz.2k.mp4" controls width="200" height="150">&lt;/video&gt;</p>
+        
+
+        <h2>Video em 2k.</h2>
+        <video src="Videos/jaaz.2k.mp4" controls autoplay loop width="200" height="150"></video>
+
+        <h2>Video em 720p</h2>
+        <video src="Videos/Jaaz.720p.mp4" controls width="200" height="150"></video>
+
+        <h2>Video 480p</h2>
+        <video src="Videos/Jaaz.480p.mp4" controls width="200" height="150"></video>
+
+        <h3>autoplay e loop</h3>
+        <p>ambos funcionam da mesma forma que o audio.</p>
+
+        <hr>
+        
+        <h2>Tag com multiplos formatos.</h2>
+        <p>Caso o nevagador nao seja compativel com um formato e sempre bom ter mais de um para esses tipos de caso.</p>
+        <pre>
+            <code>
+             &lt;video controls width=&quot;200&quot; height=&quot;150&quot;&gt;
+                &lt;source src=&quot;Videos/Jaaz.720p.mp4&quot; type=&quot;video/mp4&quot;&gt;
+                &lt;source src=&quot;Videos/Jaaz.ogv.ogv&quot; type=&quot;video/ogg&quot;&gt;
+                 &lt;p&gt;Seu navegador nao e compativel.&lt;/p&gt;
+             &lt;/video&gt;
+                
+
+            </code>
+        </pre>
+
+        <video controls width="200" height="150" >
+          <source src="Videos/Jaaz.720p.mp4" type="video/mp4">
+          <source src="Videos/Jaaz.ogv.ogv" type="video/ogg">
+          <p>Seu navegador nao é compativel.</p>
+       </video>
+
+       <hr>
+
+       <h3>Colocando poster no video</h3>
+       <p>Caso voce queira uma imagem pre carregada antes do video, usamos o <strong>poster</strong> . Segue um exemplo:</p>
+       <video src="Videos/Happy.mp4.mp4" controls width="200" height="150" poster="Imagem/Imagens/pat.jpg"></video>
+       <br>
+       <code>&lt;video src="Videos/Happy.mp4.mp4" controls width="200" height="150" poster="Imagem/Imagens/pat.jpg">&lt;/video></code>
+
+       <h2>Devo hospedar internamente?</h2>
+       <p>Na maioria das vezes nao, pois o peso de um video pode acabar aumentando muito o preco de uma hospedagem de um site, e isso pode afetar o desempenho dele, entao agora iremos mostrarum proxuimo topico falando sobre videos alocados externamente.</p>
+
+       <h2>Videos do YouTube</h2>
+       <p>No youtube existe uma formas de pegar um link.</p>
+       <p>Incorporando um link.</p>
+       <p>Clique em compartilhar e incorporar link, apois isso abra a tag &lt;video&gt;</p>
+
+       <iframe width="200" height="150" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+       <p class="small>">A unica desvantagem do youtube é que ele nao te da uma privacidade maior nos seus videos, qualquer um vai ter acesso.</p>
+
+       <h2>Vimeo</h2>
+       <p>A qualidade do video é boa mas se a internet for meio lenta acaba dando umas travadas.</p>
+       <p>Caso precise de algo com maior privacidade o correto é utilizar o vimeo.</p>
+
+       <iframe src="https://player.vimeo.com/video/343399900?h=2bbe7c2ef7" width="200" height="150" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+       
+
+
+</body>
+</html>

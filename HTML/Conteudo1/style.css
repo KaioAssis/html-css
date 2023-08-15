@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body{
+
+    font-size: 20px
+    text-align: justify;
+    background-color: rgb(105,159,159);
+   
+    
+    
+ 
+}
+
+.modulo{
+
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.titulo{
+    font size: 40px;
+    text-align: left;
+}
+
+.small{
+    font-size: small;
+    font-weight: bolder;
+}
+
+.marca{
+    background-color: brown;
+    font-weight: ;
+}

@@ -1,0 +1,71 @@
+<!doctype html> <!-- Indicando que a pagina esta em HTML-->
+<html lang="pt-br"><!-- Indicando a linguagem que ira ser utilizada-->
+
+<head> <!--Inicio do cabecalho-->
+
+    <meta charset="utf-8">  <!--Inclusao de Caracteres Especiais-->
+    <meta name="author" content="kaio">  <!--Nome do criador Da pagina-->
+    <meta name="descripttion" content="html5,css,javascript"> <!--Descricao do que ira ter na pagina-->
+    <meta name="keywords" content="html5,css,javascript">  <!-- Palavras Chaves Para auxiliar na pesquisa-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--ira ocupar 100 a tela visivel-->
+    <link rel="shortcut icon" href="Imagem/imagem.ico/games_icon-icons.com_76710.ico" type="image/x-icon">
+    <title> Estilos em Css </title> <!--Titulo da pagina -->
+
+    <link rel="stylesheet" href="style2.css"> <!--Linkando Estilizacao da pagina em CSS-->
+
+    <style>
+     
+
+    .interno{
+        font-size: 20px;
+        background-color: crimson;
+        font-weight: bolder;
+        color: forestgreen;
+        font-family: 'Times New Roman', Times, serif
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="modulo">Modulo 1</h1>
+    <h1 class="titulo"> HTML: Utilizando o CSS</h1>
+
+    <h2>O que é css?</h2>
+    <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com o HTML para definir a aparência e o layout dos elementos em uma página da web. Ele permite separar o conteúdo (HTML) da apresentação (estilos) de uma forma eficiente. Com o CSS, você pode definir propriedades como cor, fonte, tamanho, margem, posicionamento e muito mais para os elementos HTML. Isso permite controlar o design e a formatação da página de maneira consistente e flexível. O CSS é aplicado aos elementos HTML usando seletores, que identificam quais elementos devem receber as regras de estilo especificadas. Além disso, o CSS suporta o conceito de cascata, o que significa que você pode definir estilos em várias camadas e os estilos mais específicos terão precedência sobre os estilos mais genéricos. Em resumo, o CSS desempenha um papel crucial na criação de páginas da web visualmente atraentes e bem estruturadas.</p>
+
+<h2>Formar de utilizar css</h2>
+   <p>Existem tres formar de se utilizar o css dentro de um codigo em html.</p>
+   <ul>
+    <li>Inline</li>
+    <li>Interno</li>
+    <li>Externo</li>
+   </ul>
+
+   <p>Cada um tem sua particuliaridade, mas no fim das contas o que mais utilizamos é o externo, pois ele acaba deixando o codigo mais organizado,limpo e outras paginas podendo usar ele.</p>
+   <p>Se voce abrir todos as outras paginas apertando <strong>CTRL+U</strong> para ver o codigo da pagina vera que todas elas tao linkadas ao <ins>style.css</ins> ele que cria um estilo para todas aquelas paginas. </p>
+   <P><strong>Abra o cosdigo da pagina para entender melhor.</strong></P>
+
+   <h3>Como usar o inline?</h3>
+   <p>O inline nos utilizamos eles dentro da tag, o lado ruim dele é que se mais de uma tag tiver o mesmo parametro e vc quiser atualizar vc ira ter que atualizar um por um, use somente quando for uma edicao pontual.</p>
+   <p style="font-size: 20px; background-color: blue; font-weight: bolder; color: chartreuse; font-family: Arial, Helvetica, sans-serif;" >Assim que funciona um inline.</p>
+
+   <h3>Como usar o interno?</h3>
+   <p >O interno nos utilizamos dentro de &lt;Head&gt;; Eu pessoalmente nao vejo muita utilidade nesse, prefiro utilizar o externo, esse alem de dexar o codigo cheio, se vc quiser copiar o modelo da pagina vaiter que colar em uma por uma. </p>
+   <p class="interno"> Aqui esta um interno.</p>
+
+   <h3>Como usar um externo.</h3>
+   <p>O externo é o mais completo entre os tres, pois voce consegue fazer edicoes inline utilizando o atributo <strong>class</strong> entao os dois acima acabam sendo bem inuteis.</p>
+   <p class="externo"> Aqui esta um externo.</p>
+
+
+   
+
+
+
+</body>
+
+</html>

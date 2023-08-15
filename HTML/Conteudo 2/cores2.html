@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Círculo Cromático</title>
+  <style>
+    .color {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function getColorName(color) {
+      switch (color) {
+        case 'red':
+          return 'Vermelho';
+        case 'orange':
+          return 'Laranja';
+        case 'yellow':
+          return 'Amarelo';
+        case 'green':
+          return 'Verde';
+        case 'blue':
+          return 'Azul';
+        case 'indigo':
+          return 'Anil';
+        case 'violet':
+          return 'Violeta';
+        default:
+          return 'Cor desconhecida';
+      }
+    }
+
+    function showColorName(color) {
+      var colorName = getColorName(color);
+      document.getElementById('colorName').innerText = colorName;
+    }
+  </script>
+</head>
+<body>
+  <h1>Círculo Cromático</h1>
+  <div class="color" style="background-color: red" onclick="showColorName('red')"></div>
+  <div class="color" style="background-color: orange" onclick="showColorName('orange')"></div>
+  <div class="color" style="background-color: yellow" onclick="showColorName('yellow')"></div>
+  <div class="color" style="background-color: green" onclick="showColorName('green')"></div>
+  <div class="color" style="background-color: blue" onclick="showColorName('blue')"></div>
+  <div class="color" style="background-color: indigo" onclick="showColorName('indigo')"></div>
+  <div class="color" style="background-color: violet" onclick="showColorName('violet')"></div>
+  <p>Cor selecionada: <span id="colorName"></span></p>
+</body>
+</html>

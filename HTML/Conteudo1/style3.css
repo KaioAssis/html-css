@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+table{
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 700px;
+    height: 650;
+    border: 2px solid rgb(255, 254, 254);
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+}
+
+.linha {
+    display: block;
+  }

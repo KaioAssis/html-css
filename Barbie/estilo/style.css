@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Barbie' ;
+    src: url('../fonte/barbie.ttf') format('opentype');
+    font-weight: normal;
+  }
+
+  :root{
+    --cor1: #D49DFC;
+    --cor2: #FF07E6;
+    --cor3: #7F05B3;
+    --cor4: #52196B;
+    --cor5: #310245;
+
+    --fonte0: arial, verdana , helvetica, sans-serif;
+    --fonte1: 'Barbie', Cursive;
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor5);
+    font-family: var(--fonte0);
+    font-size: 1.5em;
+}
+
+header{
+    background-color: var(--cor2);
+    color: white;
+    font-family: 'Barbie';
+}
+header h1{
+    text-align: center;
+}
+header p{
+    text-align: center;
+}
+
+nav{
+    background-color: var(--cor4);
+}
+nav a{
+    text-decoration: none;
+    color: gold;
+    font-family: "barbie";
+    margin-left: 20px;
+}
+nav a:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+nav .ken:hover{
+    text-decoration: none;
+    color: blue;
+}
+nav .allan:hover{
+    text-decoration: none;
+    color: rgb(116, 250, 7);
+}
+main{
+    margin: 0px 20px 20px 20px;
+    background-color: white;
+    
+}
+main h1 {
+    font-family: 'Barbie';
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+main h2 {
+    font-family: 'Barbie';
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 0px 10px 0px 10px;
+}
+main img{
+    width: 100%;
+    height: 20%;
+
+}
+.video{
+    background-color: rgb(233, 185, 229);
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+
+  
+   
+
+}
+
+iframe {
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  
+}
+aside{
+    background-color: pink;
+}
+aside h3{
+    font-family: 'barbie';
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+aside > ol {
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+
+

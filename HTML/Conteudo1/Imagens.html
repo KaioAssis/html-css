@@ -1,0 +1,131 @@
+<!doctype html> <!-- Indicando que a pagina esta em HTML-->
+<html lang="pt-br"><!-- Indicando a linguagem que ira ser utilizada-->
+
+<head> <!--Inicio do cabecalho-->
+
+    <meta charset="utf-8">  <!--Inclusao de Caracteres Especiais-->
+    <meta name="author" content="kaio">  <!--Nome do criador Da pagina-->
+    <meta name="descripttion" content="html5,css,javascript"> <!--Descricao do que ira ter na pagina-->
+    <meta name="keywords" content="html5,css,javascript">  <!-- Palavras Chaves Para auxiliar na pesquisa-->
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0"> <!--ira ocupar 100 a tela visivel-->
+    <link rel="shortcut icon" href="Imagem/imagem.ico/games_icon-icons.com_76710.ico" type="image/x-icon">
+    <title> Imagens </title> <!--Titulo da pagina -->
+
+    <link rel="stylesheet" href="style.css"> <!--Linkando Estilizacao da pagina em CSS-->
+
+</head><!--Fim Do cabecalho-->
+
+<h1 class="modulo">Modulo 1</h1>
+<h1>Imagens</h1>
+
+<h2>Imagens</h2>
+<p> As imagens são uma parte essencial da web moderna, tornando as páginas mais atrativas, envolventes e informativas.</p>
+
+<p>Cuidado Com Copyright&copy;, quando for pegar alguma imagem da web, veja se o autor deu o direito de uso livre da imagem.</p>
+
+<h3>Sites com imagens de dominio publico</h3>
+
+<ul>
+    <li>UnSplash</li>
+    <li>Pexels</li>
+    <li>FreePik</li>
+    <li>RawPixel</li>
+</ul>
+
+<h2>Tipos De Imagem</h2>
+<P>Em nossos sites iremos na maioria das vezes trabalhar com esses formatos de imagem que esta abaixo, onde cada um tem sua vantagem e desvantagem, depende da necessidade do criador ou do cliente.</P>
+<h3>Jpeg</h3>
+<p>JPEG (Joint Photographic Experts Group) é um formato de compressão de imagem amplamente utilizado na web. Ele oferece uma boa relação entre qualidade e tamanho de arquivo, permitindo que as imagens sejam compactadas para tamanhos razoáveis sem perder muita qualidade visual. No entanto, o formato JPEG utiliza compressão com perdas, o que significa que parte da informação da imagem é descartada, resultando em uma diminuição no detalhamento e na qualidade da imagem. É ideal para fotografias e imagens com variações suaves de cores. </p>
+<h3>PNG</h3>
+<p>PNG (Portable Network Graphics) é um formato de imagem popular na web que oferece alta qualidade e suporte à transparência. Ao contrário do formato JPEG, o PNG utiliza compressão sem perdas, o que significa que não há perda de qualidade durante o processo de compressão. Isso é particularmente útil para imagens com áreas planas de cores sólidas ou com elementos gráficos como logotipos, ícones ou gráficos vetoriais. Além disso, o PNG suporta transparência, permitindo que partes da imagem sejam transparentes, o que é útil para sobrepor imagens em diferentes fundos. No entanto, como o PNG não utiliza compressão com perdas, os arquivos tendem a ser maiores do que os arquivos JPEG.</p>
+<h3>GIF</h3>
+<p>GIF (Graphics Interchange Format) é um formato de imagem amplamente utilizado na web, conhecido por suportar animações e sequências de imagens. O GIF é capaz de armazenar múltiplas imagens em um único arquivo, criando a ilusão de movimento quando essas imagens são reproduzidas em sequência. Isso torna o GIF uma escolha popular para gráficos animados simples, como banners, botões ou avatares. Além disso, o GIF também suporta transparência, permitindo que partes da imagem sejam transparentes, o que é útil para criar efeitos de sobreposição em páginas da web. No entanto, o GIF possui uma limitação de cores de 8 bits, o que significa que pode ter uma qualidade inferior quando comparado a outros formatos de imagem, como JPEG ou PNG, que suportam uma maior variedade de cores. Além disso, os arquivos GIF tendem a ser relativamente grandes, especialmente quando contêm muitas imagens ou animações longas.</p>
+
+<h2>Tamanho de imagem</h2>
+<p><strong>Exite tamanho certo para uma imagem?</strong></p>
+<p>Nao, mas lembre-se que quanto maior for a imagem mais pesada ela vai ser e com isso acarreta na velocidade do site e o google nao é muito legal com sites considerados "lentos"; O tamanho maximo de largura deve ser de 1500 a altura nao se preocupa pois a maioria dos apps de edicao de imagem ja fazem automaticamente.</p>
+<h2>Resolucao</h2>
+<p>Outro ponto importante é a resolucao, uma resolucao entre 70 e 96 pixels ja é o suficiente, isso muda caso seu publico alvo ou cliente realmente precise de imagens extremamente nitidas com uma resolicao perfeita. </p>
+<p>Nunca gere a maior imagem possivel, isso no fim das contas acaba apenas inflando sua pagina, e prejudicando o acesso, pois lembre-se vivemos em um pais de "terceiro mundo" e nem todos tem acesso a uma internet decente, e tambem nao adianta pegar uma imagem muito grande e editar no css, pois o peso dela sempre vai ser o original, por isso o recomendado é sempre trabalhar com diversos tamnanhos de imagem. Voce vera isso mais abaixo.</p>
+
+<h2>Tag &lt;IMG&gt;</h2>
+<p>A tag &lt;img&gt; em HTML é usada para exibir imagens em uma página da web. Ela requer o atributo src para especificar o caminho da imagem e o atributo alt para especificar o conteudo dessa imagem, tambem permite atributos opcionais,como css ou javascript.</p>
+<p> &lt;img src="" alt=""&gt;</p>
+
+<h3>Formas de usa-la</h3>
+
+<h4>Ela pode ser usada internamente, ou seja, dentro de uma pasta alocada na maquina ou servidor.</h4>
+<p>Imagem PNG de coracao:</p>
+<p>JPEG Cerebro</p>
+<p>Gif Pato</p>
+<table>
+<td><img height="150px" width="150px" src="Imagem/Imagens/coracao.png" alt="Coracao"></td> <!--Como ainda nao chegamos em css ignore essa linha , esta aqui apenas para fins esteticos-->
+<td><img height="150px" width="150px" src="Imagem/Imagens/cerebro.avif" alt="cerebro"></td>
+<td><img height="150px" width="150px" src="Imagem/Imagens/duck-dance.gif" alt="pato"></td>
+</table>
+
+<h4>Ela tambem pode ser usada externamente, ou seja apenas copiando o link do diretorio na web</h4>
+<P class="small">*apenas lembre-se que no momento em que o lugar que hospeda cair a imagem corrompe.</P>
+<p>PNG Miranha </p>
+<p>JPEG Macaco Buxim chei</p>
+<p>GIF Garen</p>
+<table>
+<td><img height="150px" width="150px" src="https://artpoin.com/wp-content/uploads/2022/08/centro-de-mesa-spider-man1.png" alt="miranha"></td>
+<td><img height="150px" width="150px" src="https://imagens1.ne10.uol.com.br/blogsjconline/oviral//2017/05/macaco-obeso-tio-gordo.jpg" alt="buxinho cheio"></td>
+<td><img height="150px" width="150px" src="https://thumbs.gfycat.com/DemandingBrokenAfricanbushviper-size_restricted.gif" alt="garen dance"></td>
+</table>
+<p>Agora que voce sabe que existe duas formas fica a seu criterio e necessidade, a de baixo é mais leve porem sempre corre o risco de perder a imagem.</p>
+
+<h2>Favicon</h2>
+<p>Favicon basicamente é o icone que fica nas abas do seu navegador.</p>
+<p>para colocar um  favicon voce precisa que a imagem de preferencia seja png e depois disso converta ela para .ICO, apos isso voce ira utilizar o seguinte codigo</p>
+<p> &lt;link rel="shortcut icon" href="A imagem que vc quer.ico" type="image/x-icon"&gt;</p>
+<p>Nesse Site utilizamos essa imagem como guia.</p>
+<img src="Imagem/imagem.ico/games_icon-icons.com_76710.ico" alt="favicon">
+
+<h2>Adaptacao de midia.</h2>
+<p>Como nos sabemos, cada vez mais temos mais e mais eletronicos rodeando nossa vida, e com isso tambem acabamos tendo muito mais formas de acessar a internet, entao com isso nos temos que adaptar nosso site cada vez mais para todos os tipo de aceesos seja em um celular mini ou em uma smart tv de 50 polegadas.</p>
+<h3>Imagens Dinamicas</h3>
+<p>Como falado antes, precisamos adaptar nossas midias para diversos formatos possiveis, entao  a tag &lt;PICTURE&GT; junto da tag &lt;Source&gt; é utilizada, para ver o exemplo de imagem se adaptando clique no link abaixo, pois como temos uma imagem muito grande ela ia acabar poluindo o site.</p>
+<p>Sempre que for usar essa tag, lembre-se de ou deixar as imagens em sequencia  crescente ou decrescente de tamanho.</p>
+
+<p>Aqui temos tres tipos de tamanhos.</p>
+<ul>
+    <li>300x300</li>
+    <li>700x700</li>
+    <li>1000x1000</li>
+</ul>
+
+<a target="_next" rel="next" href="Tamanhosdeimagem.html"><strong>Clique aqui</strong></a>
+
+<p class="small">*aumente e diminua o zoom para ver os tipos de imagem</p>
+
+<h3><strong>Ta, mas porque adaptar a imagem?</strong></h3>
+<p>Pois alguns em alguns dispositivos a imagem pode nao estar 100% na tela,  e todos nos sabemos como é chato ficar fazendo rolagem lateral.</p>
+
+<h3>O codigo:</h3>
+<p><strong>O que ele esta fazendo?</strong></p>
+<p>Ao abrir a tag &lt;Picture&gt; nos adicionamos a primeira imagem(lembre-se da ordem de tamanhos), feito isso, adicionamos a tag &lt;Source&gt;. </p>
+<p> Source está sendo usada dentro de uma estrutura picture para fornecer diferentes imagens de origem dependendo da largura da tela do dispositivo.<br>
+
+A atribuição media="(max-width:750px )" define uma condição de mídia na qual a imagem especificada será utilizada. Nesse caso, a imagem com o caminho "Imagem/Imagens/imgP.png" será usada quando a largura da tela for igual ou menor que 750 pixels e aImagem/Imagens/imgM.png quando a largura da tela for igual ou menor que 1050px.</p>
+
+<pre>
+    <code>
+
+        &lt;picture&gt;
+        &lt;source media="(max-width:750px )" srcset="Imagem/Imagens/imgP.png"&gt;
+        &lt;source media="(max-width:1050px )" srcset="Imagem/Imagens/imgM.png"&gt;
+        &lt;img src="Imagem/Imagens/imgG.png" alt="fleximg"&gt;
+        &lt;/picture&gt;
+        
+  </code>    
+</pre>
+
+
+
+
+
+
+
+

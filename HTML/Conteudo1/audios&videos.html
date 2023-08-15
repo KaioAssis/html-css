@@ -1,0 +1,117 @@
+<!doctype html> <!-- Indicando que a pagina esta em HTML-->
+<html lang="pt-br"><!-- Indicando a linguagem que ira ser utilizada-->
+
+<head> <!--Inicio do cabecalho-->
+
+    <meta charset="utf-8">  <!--Inclusao de Caracteres Especiais-->
+    <meta name="author" content="kaio">  <!--Nome do criador Da pagina-->
+    <meta name="descripttion" content="html5,css,javascript"> <!--Descricao do que ira ter na pagina-->
+    <meta name="keywords" content="html5,css,javascript">  <!-- Palavras Chaves Para auxiliar na pesquisa-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--ira ocupar 100 a tela visivel-->
+    <link rel="shortcut icon" href="Imagem/imagem.ico/games_icon-icons.com_76710.ico" type="image/x-icon">
+    <title> Audios </title> <!--Titulo da pagina -->
+
+    <link rel="stylesheet" href="style.css"> <!--Linkando Estilizacao da pagina em CSS-->
+
+</head><!--Fim Do cabecalho-->
+
+<body><!--Inicio do corpo-->
+    <h1 class="modulo">Modulo 1</h1>
+    <h1 class="titulo"> HTML: Audios</h1>
+    <p>Áudio são elementos fundamentais na criação de conteúdo multimídia na web. Em HTML, temos tags específicas para incorporar e controlar áudio, em nossas páginas as tags de audio permitem que os usuários interajam e desfrutem de uma experiência multimídia rica diretamente em seus navegadores.</p>
+    <p class="small">*Da mesma forma que na imagem, devemos tomar cuidado com o que colocamos, pois audios tambem tem direito de reproducao.</p>
+
+    <h2>Audios e seus formatos</h2>
+    <p>Na maioria das vezes iremos trabalhar apenas com mp3, mas pode ser que em algum momento trabalhemos com wav ou ogg, entao segue aqui uma comparacao entre os 3 e suas funcoes.</p>
+    <ul>
+        <li>MP3</li>
+        <P>mp3: é um formato de codificação proprietário que usa o codec MPEG-1 Audio Layer III para comprimir o áudio e remover as frequências que o ouvido humano não percebe. Ele é muito popular por sua compatibilidade e portabilidade, mas pode perder qualidade em relação ao originaL.</P>
+        <LI>WAV</LI>
+        <P>é um formato de codificação não comprimido que usa o codec PCM para preservar a qualidade do áudio original. Ele é muito usado em gravações profissionais e aplicações que exigem alta fidelidade, mas ocupa muito espaço em disco.</P>
+        <p class="small"> Nao usa wave pq é muuuuuuuito pesado, apenas use caso seja para arquivo de download, caso o contrario opte por mp3. </p>
+        <LI>OGG</LI>
+        <p>é um formato de codificação aberto que usa o codec Vorbis para comprimir o áudio com uma taxa variável, adaptando-se à complexidade do som. Ele é mais eficiente que o mp3 em termos de qualidade e tamanho, mas menos compatível com alguns dispositivos e softwares.</p>
+    </ul>
+
+    <h2>Tag &lt;Audio&gt;</h2>
+
+    <p>A tag &lt;audio&gt; é usada para incorporar e reproduzir arquivos de áudio em uma página web. Com ela, podemos adicionar facilmente elementos sonoros, como músicas ou efeitos sonoros, ao nosso conteúdo. Basta especificar o caminho do arquivo de áudio usando o atributo <em>src</em> e adicionar os controles de reprodução com o atributo <em>controls</em>. Os usuários poderão reproduzir, pausar, ajustar o volume e até mesmo avançar ou retroceder na reprodução do áudio. Além disso, podemos usar atributos adicionais, como <em>autoplay</em> para reprodução automática ou <em>loop</em> para repetir o áudio continuamente. Com a tag &lt;audio&gt;, podemos criar experiências sonoras envolventes para nossos visitantes de forma simples e acessível.</p>
+<h2>Inserindo Audio</h2>
+<p>Para inserir um audio a melhor seguimos os seguintes passos.</p>
+<ol>
+
+<li>Adicionamos a tag &lt;audio&gt;</li>
+<li>Inserimos o diretorio do audio no <strong>src=" "</strong></li>
+<li>Para utiliuzar o player padrao do html, temos que colocar a funcao control, caso nao coloque o player nao ira aparecer. </li>
+<li>Na funcao type especificar "audio/mp3"</li>
+<li>Autoplay Preload e Loop</li>
+    <ul>
+        <li>Preload</li>
+        <ul>
+            <li>Serve para dar uma sugestão ao navegador sobre como o autor quer que o áudio seja carregado na página.</li>
+                <ul>
+                    <li>none: indica que o usuário não vai precisar ouvir o áudio ou que o servidor quer minimizar o tráfego de dados. Nesse caso, o áudio não será pré-carregado.</li>
+                    <li>metadata: indica que, embora o usuário não vá precisar ouvir o áudio, obter os metadados (como o tamanho e a duração) é interessante. Nesse caso, apenas os metadados serão pré-carregados.</li>
+                    <li>auto: indica que o navegador pode escolher a melhor forma de carregar o áudio, de acordo com suas heurísticas. Nesse caso, o áudio pode ser pré-carregado parcial ou totalmente.</li>
+                        <P>Dentre essas 3 <strong>Metadata</strong> é a mais recomendada</P>
+                </ul>
+        </ul>
+        <li>Autoplay</li>
+        <ul>
+            <li>Ele define se o áudio vai começar a tocar assim que estiver pronto, sem esperar pela ação do usuário.</li>
+            <ul>
+                <li>A maioria dos navegadores nao vao aceitar isso, por questao de seguranca ou otimizacao.</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>Loop</li>
+            <ul>
+                <li>Como o nome ja diz ele ira criar um loop ao chegar ao fim do audio. </li>
+            </ul>
+        </ul>
+    </ul>
+</ol>
+
+    <h3>Formas de utilizar essa tag</h3>
+  
+    <h4>Forma Simples</h4>
+    <p>Apenas adicione a tag audio junto com a source,so que dessa forma caso seu navegador nao seja compativel com o audio ele simplesmente nao ira tocar.</p>
+    <P> &lt;audio src="Audio/Die For You.mp3" autoplay controls type="audio/mp3" &gt; &lt;/audio &gt; </P>
+    <audio src="Audio/Die For You.mp3" autoplay controls type="audio/mpeg"></audio> 
+    <H4>Forma mais correta</H4>
+    <P><strong>Porque mais correta?</strong></P>
+    <p>Pois, ela acaba permitindo voce trabalhar com diversas faixas de audios para seu navegador, assim caso uma de falha o outro arquivo pode cobrir ele.</p>
+
+    <p>Aqui esta o codigo:
+        <br>
+        <pre>
+            &lt;audio controls preload="metadata" &gt;
+                &lt;source src="Audio/Devaneios.mp3" type="audio/mpeg" &gt;
+                &lt;source src="Audio/Devaneios.ogg.ogg" type="audio/ogg" &gt;
+                &lt;source src="Audio/Devaneios.wav.wav" type="audio/wav" &gt;
+                &lt;p&gt;Navegador nao suporta audio&lt;/p&gt;
+            &lt;/audio&gt;
+        </pre>
+    </p>
+
+    <audio controls preload="metadata" >
+        <source src="Audio/Devaneios.mp3" type="audio/mpeg"  >
+        <source src="Audio/Devaneios.ogg.ogg" type="audio/ogg">
+        <source src="Audio/Devaneios.wav.wav" type="audio/wav">
+        <p>Navegador nao suporta audio</p>
+    </audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>

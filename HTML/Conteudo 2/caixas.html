@@ -1,0 +1,77 @@
+<DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modelo de caixas   </title>
+    <style>
+        h3{
+            width: 300px;
+            height: 50px;
+            background-color: lightgreen;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+            padding: 20px;
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: red;
+            margin: 5x;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>O que é uma caixa?</h1>
+    <p>de fiorma simples e objetiova, baseqado em um conceito chamado <em>"box model"</em>, a grande maioria dos emlementos html que temos no nosso site sao como caixas. elas sao containers que amarzenam conteudos ou ate mesmo outras caixas</p>  
+
+    <h2>Anatomia de uma caixa</h2>
+    <p>Vamos analisar como uma caixca vai ser apresentada por todos os navegadores. Olhe atentamente oi diagrama a seguir. que é extamente o ja citado <strong>Modelo de caixa.</strong></p></body>
+    <img src="Imagens/caixa.png" alt="caixa">
+
+    <p>tudo comeca a partir do <strong>conteudo</strong>(content), que representamos acima com o blablabla... Por padrao, topda caixa é composta apenas pelo conteudo e nao possui <em>padding</em>
+    , nem <em>border</em>, nem <em>outline</em>, e nem <em>margin</em>. Uma excessao curiosa é o elemento <em>&lt;Body></em> que ja vem com uma margin de 8px </p>
+    <p>todo conteudo possue uma <em>largura</em> e um comprimento e a esse conjunto de propriedades, damos o nome de <em>box size</em> o tamanho da caixa nao enclui as medidas de padding, borde,outiline e margin</p>
+    <p>deoius di cinteudo e seu tamanho, vamos focar na borda que fica em violta dele. Ela opode ter uma espessura, uma cor e um formato</p>
+    <p>entre a borde e o conteudo- da borda pra dentro- temos o <strong>preenchimento</strong>(padding)
+    e da borda pra fora temos a <strong>margem</strong>(margin)</p>
+    <p>entre a margem a borda, podemos determinar o <strong>contorno</strong>(outline) que é muito pouco utilizado mas existe, ele é um tracado visual que podemos creiar fora da borda e o calculo de sua espessura faz párte da margem estabelecida.</p>
+    <br><br>
+    <h3>Exemplo</h2 >
+        <br>
+        <br>
+        <p>usando shorthand <br> <img src="Imagens/shorthand2.png" alt="" width="400px" height="200"> <img src="Imagens/shorhand 2.png" alt="" width="400px" height="200"></p>
+
+        <h2>Margens no automatico</h2>
+        <p>Um recurso que tambem vai ser muito usado em nossos exercicios é a centralizaxao de bkocos. para que isso seja tfeito, devemos pedir que o navegador caucule automatimente as margens da esquerda e da direita para que o bloco seja colocado no meio do navegador idependentemente do tamanho da tela, para utilizarmos isso declaramos no seletor <span style="color: red;">margin</span>: <span style="color: blue;">auto</span>;</p>
+
+        <h2>Tipos De Caixas</h2>
+        <p>dependendo do comportamento da ciaxa, podemos classificar um elemento em uma de duas categorias:</p>
+        <br>
+        <br>
+
+        <h3>Tipo Block Level</h3>
+        <br><br>
+        <p>um elemento dito block-level sempre vai indicar em uma nova linha e vai ocupar a largura total do elemento onde ele esta contido. Se nao estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do &lt;Body>.</p>
+        <p>O elemeto mais conhecido é o <strong>&lt;Div></strong> e suas variacoes semanticas da html5, como (Main,Section,Asisde,ETC)</p>
+       <p>Elementos Block Level</p> 
+       <img src="Imagens/blocklvl.png" alt="blklvl">
+
+       <h2>Inline Level</h2>
+       <p>Um elemento tipo <strong>Inline-level</strong> nao vai comecar em uma nova linha, e sim no ponto exato onde foram definidos.E a largura dele vai ocupare apenas o tamanho relativvo ao seu conteudo</p>
+       <img src="Imagens/inline lvl.png" alt="inlvl">
+
+       <h3>Transformando inline em block level</h3>
+       <p>da pra transformar um inline em block level usando css com o parametro <strong>Display:block</strong> ou se voce quiser continuar mantendo em inlevel porem com caracteristicas de block level so utilizar <strong>Display:inline-block;</strong></p>
+
+       
+
+</body>
+
+    </html>>
+
+
+
+

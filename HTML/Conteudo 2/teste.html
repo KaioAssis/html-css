@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando</title>
+
+    <style>
+        .especial:hover{
+            color: pink;
+            background-color: black;
+            text-decoration:none ;
+        }
+        
+        body {
+           font: normal 1em arial,helvetica,sans-serif;
+           
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: darkmagenta;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            background-color: yellow;
+
+        }
+
+        .teste::first-letter{
+            background-color: rgb(214, 133, 12);
+            color: red;
+
+        }
+        div{
+            display: inline-block;
+         
+            background-color: azure;
+            width: 200px;
+            height: 200px;
+            border: 3px;
+            border-color: rgb(241, 11, 11);
+          
+            
+        }
+        div:hover{
+           
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    
+    <p>Link da vaca
+    <a href="https://www.youtube.com/watch?v=1b6e_HIjdEA" target="_blank">Clique aqui</a></p>
+    <p>Link do rock 
+    <a href="https://www.youtube.com/watch?v=lRwYAx1WRCY">Clique aqui</a></p>
+    <p>Link do porco
+    <a href="https://youtube.com/watch?v=PMWT_Hm0NW4">Clique aqui</a></p>
+
+    <h2>outros</h2>
+
+    <div>
+        passe o mouse aqui
+        <p>aeeeeeeee carai</p>
+
+    </div>
+    <p>veja o oculto aparecendo</p>
+
+    <p class="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate exercitationem maiores sint quasi beatae repudiandae corrupti soluta excepturi provident, neque, dolores aut, nulla reprehenderit aliquam cum sapiente recusandae natus?</p>
+
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    
+</body>
+</html>

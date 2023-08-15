@@ -1,0 +1,176 @@
+
+
+    <style>
+      .color {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function getColorName(color) {
+        switch (color) {
+          case 'red':
+            return 'Vermelho';
+          case 'orange':
+            return 'Laranja';
+          case 'yellow':
+            return 'Amarelo';
+          case 'green':
+            return 'Verde';
+          case 'blue':
+            return 'Azul';
+          case 'indigo':
+            return 'Anil';
+          case 'violet':
+            return 'Violeta';
+          default:
+            return 'Cor desconhecida';
+        }
+      }
+  
+      function showColorName(color) {
+        var colorName = getColorName(color);
+        document.getElementById('colorName').innerText = colorName;
+      }
+    </script>
+
+
+</head>
+
+<body>
+
+    <h1 class="modulo">Modulo 2</h1>
+    <h1 class="titulo"> HTML: Cores </h1>
+
+    <h1>Psicologia das cores</h1>
+    <p>Cores sao de suma importancia para um site, pois cada cor representa um sentimento, uma ideia ou uma acao, obviamente isso vai ser utilizado em alguns certos casos, nao é infavilivel muitas marcas optam por cores diferente justamente para impactar o publico alvo</p>
+    <p>Sempre bom evitar cansaso visual em quem visita o site, por exemplo; Site com fundo preto e fonte branca é aconselhado nao ter muitas informacoes de texto pois casna a vista.</p>
+
+    <h2>Exemplos de cores e onde utilizar</h2>
+    <img width="450" height="350"  src="Imagens/cores.png" alt="tabela de cor">
+
+    <p>Existem alguns sites que so de vc olhar ja sabe que o site aparenta ser "bem feito", isso se deve muitas vezes a paleta de cores utilizadas dando uma armonia para a pagina toda, e muito se deve ao circulo cromatico.</p>
+    
+    <h3>Circulo Cromatico</h3>
+
+ <img src="Imagens/Circulo Cromatico.png" alt="Circulo Cromatico"> 
+
+ <h1>Círculo Cromático e suas cores</h1>
+ <div class="color" style="background-color: red" onclick="showColorName('red')"></div>
+ <div class="color" style="background-color: orange" onclick="showColorName('orange')"></div>
+ <div class="color" style="background-color: yellow" onclick="showColorName('yellow')"></div>
+ <div class="color" style="background-color: green" onclick="showColorName('green')"></div>
+ <div class="color" style="background-color: blue" onclick="showColorName('blue')"></div>
+ <div class="color" style="background-color: indigo" onclick="showColorName('indigo')"></div>
+ <div class="color" style="background-color: violet" onclick="showColorName('violet')"></div>
+ <p>Cor selecionada: <span id="colorName"></span></p>
+ 
+ <p>Analisando o circulo cromatico percebemos as tres cores  primarias</p>
+ <ul>
+    <li style="color: red;">Vermelho</li>
+    <li style="color: yellow;">Amarelo</li>
+    <li style="color: blue;">Azul</li>
+ </ul>
+ <p>E da juncao das cores primarias temos as secundaria</p>
+ <ul>
+    <li style="color: orangered;">Laranja</li>
+    <li style="color: purple;">Roxo</li>
+    <li style="color: green;">Verde</li>
+ </ul>
+ 
+ <p>E juntado as primarias com as secundarias temos as cores tercearias</p>
+ <ul>
+    <li style="color:  rgb(173, 255, 47);">Amarelo Esverdeado</li>
+    <li style="color:  rgb(255, 165, 0);">Amarelo Alaranjado</li>
+    <li style="color:  rgb(255, 69, 0);">Vermelho Alaranjado</li>
+    <li style="color:  rgb(128, 0, 128);">Vermelho Arroxeado</li>
+    <li style="color:  rgb(138, 43, 226);">Azul Aroxeado</li>
+    <li style="color:  rgb(0, 128, 128);">Azul Esverdeado</li>
+   </ul>
+
+    <h4>Adobe Color & Paleton</h4>
+    <p>Adobe Color <a href="https://color.adobe.com/" target="_blank" rel="external">clique aqui</a></p>
+    <p>Paletton <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external">clique aqui</a></p>
+    <p>Paletton <a href="https://coolors.co/" target="_blank" rel="external">clique aqui</a></p>
+
+    
+    <h4>Temperatura e Harmonia</h4>
+    <P>Olhando o Circulo cromatico tambem conseguimos classificar as cores por sua temperatuera.</P>
+
+    
+    <img src="Imagens/Temperatura das cores.png" alt="">
+
+    <h4>Cores complementares</h4>
+    <p>Sao aquelas que apresentam o maior contraste entre si, elas estao localizadas do lado oposto do circulo cromatico.</p>
+    <img src="Imagens/complementares.png" alt="complementares">
+
+    <h4>Cores analogas</h4>
+    <p>Direfente das cores complementares, que estao do lado extremo oposto no circulo, as cores analogas sao aquelas que sao imediatamente vizinhas entre si. </p>
+    <img src="Imagens/ANALOGAS.png" alt="analogas">
+
+    <h5>Juncao das Cores</h5>
+
+    <P>Existem varias formas de utilizar as formas de cores</P>
+
+    <h6>Analogas mais uma complementar </h6>
+    <p>É uma juncao dos dois tipos anteriores, sua funcao é colocar cores analogas junto de uma complementar para dar um grande contraste na pagina.</p>
+    <img src="Imagens/ana+comp.png" alt="">
+
+    <h6>Analogas Relacionadas</h6>
+    <p>Nessa harmonia, escolhemos duas cores analogas e depois puluamos uma terceira cor e escolhemos a quareta, dessa forma conseguimos um contraste porem semprecisar de uma cor complementar.</p>
+    <img src="Imagens/ana+rel.png" alt="anarel">
+
+    <h6>Cores Intercaladas</h6>
+    <p>Um tipo menos usado de harmonia, pois muitas vezes nao funcia muito bem, voce ira pegar a primeira cor e criar uma intercalacao com a proxima e assim em diante.</p>
+    <img src="Imagens/Cores Intercaladas.png" alt="inte">
+
+    <h6>Cores Triadicas</h6>
+    <p>Essa tecnica é bem utilizada e garante uma grande riqueza de cores, onde escolhemos tres pontos equidistante no circulo, sempre utilizando um triando equilatero entre as cores.</p>
+    <img src="Imagens/Triade.png" alt="triade">
+
+    <h6>Cores em quadrados</h6>
+    <p>Semelhante ao esquema triadico, mas permiote selecionar quatro cores com um conmtraste razoavel entre as cores escolhidas.</p>
+    <img src="Imagens/qUADRADO.png" alt="quaddrado">
+
+    <h6>Cores tetradicas</h6>
+    <p>Com essa tecnicas, vamos escolher dois pares de cores, com bastante contraste entre si.</p>
+    <img src="Imagens/tetradica.png" alt="tetra">
+
+    <h6>Monocromia</h6>
+    <p>Uma forma bem diferente das outras, utiliza a mesma cor variante entre sua saturaca e seu brilho.</p>
+    <img src="Imagens/monocromia.png" alt="mon">
+
+    <h2>Gradiente</h2>
+    <p>Podemos gerar Gradientes e aplicarmos a componentes visuais usando folhas de estilo, gradiente é considerado como imgem pelo navegador entao utilizamo o backgroud image, ja o numero 90 referencia ao angulo de inclinacao que vc quer nesse codigo colocamos 90°</p>
+    <code>&lt;p> style="background-image: linear-gradient(90deg, yellow,red);">tripo assim&lt;/p></code>
+    <p style="background-image: linear-gradient(90deg, yellow,red); color: yellow;">Tipo assim</p>
+
+    <h3>Gadriente radial</h3>
+    <code>
+        
+    &lt;P style="background-image: radial-gradient(circle, red,yellow,green);"> &lt;/P>
+    </code>
+
+    <P style="background-image: radial-gradient(circle, red,yellow,green);color: green;">O </P>
+
+    <p>Tambem tem como definir a porcentagem de cada cor</p>
+    <p style="background-image: linear-gradient(90deg, yellow 30%,red 60%,orange 10%); color: yellow;">T</p>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+    
+
+
+    
+ 

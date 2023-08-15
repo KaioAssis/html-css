@@ -1,0 +1,70 @@
+<!doctype html> <!-- Indicando que a pagina esta em HTML-->
+<html lang="pt-br"><!-- Indicando a linguagem que ira ser utilizada-->
+
+<head> <!--Inicio do cabecalho-->
+
+    <meta charset="utf-8">  <!--Inclusao de Caracteres Especiais-->
+    <meta name="author" content="kaio">  <!--Nome do criador Da pagina-->
+    <meta name="descripttion" content="html5,css,javascript"> <!--Descricao do que ira ter na pagina-->
+    <meta name="keywords" content="html5,css,javascript">  <!-- Palavras Chaves Para auxiliar na pesquisa-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--ira ocupar 100 a tela visivel-->
+    <link rel="shortcut icon" href="Imagem/imagem.ico/games_icon-icons.com_76710.ico" type="image/x-icon">
+    <title> Links&Ancoras </title> <!--Titulo da pagina -->
+
+    <link rel="stylesheet" href="style.css"> <!--Linkando Estilizacao da pagina em CSS-->
+
+</head><!--Fim Do cabecalho-->
+
+<body><!--Inicio do corpo-->
+    <h1 class="modulo">Modulo 1</h1>
+    <h1 class="titulo"> HTML: Links&Ancoras</h1>
+
+    <h2>Links Externo</h2>
+    <P>Usamos a tag &lt;A&gt; como ancora para links.</P>
+    <p>Entre no site <a href="http://www.pudim.com.br">pudim</a></p>
+    <p>Quando vc clica no link, ele acaba te direcionando para otro site e substitui pela sua aba, caso nao queira que isso acontessa utilizamos diversos targets.</p>
+    <p class="small">*Caso nao tenha o link ainda para, coloque uma <strong>#</strong> para mostrar que ira preencher futuramente. </p>
+
+    <ul>
+        <li>
+            <strong>_self:</strong> Abre o link na mesma janela ou quadro em que o link foi clicado.
+        </li>
+        <li>
+            <strong>_blank:</strong> Abre o link em uma nova janela ou guia do navegador.
+        </li>
+        <li>
+            <strong>_parent:</strong> Abre o link no quadro pai do quadro em que o link foi clicado.
+        </li>
+        <li>
+            <strong>_top:</strong> Abre o link no quadro superior, substituindo todos os quadros existentes.
+        </li>
+        
+    </ul>
+
+    <P>Utilize tambem <strong>rel=external</strong> para mostrar que o link vai para fora do site.</P>
+
+    <p>Segue um exemplo de link externo.</p>
+    <a target="_blank" rel="external" href="https://www.clickjogos.com.br/">Click Jogos</a>
+
+    <h2>Links Internos</h2>
+
+    <p>Quando queremos referenciar paginas internamente utilizamos o mesmo metodo que o link externo, o lado bom disso é que nao precisamos referenciar a url inteiro e sim apenas onde esta localizado o arquivo.</p>
+    <p class="small">*mas so funciona se estiver dentro da pasta onde o arquivo principal esta. </p>
+    <a href="Textos.html" target="_blank">Textos</a>
+    <h3>Usando No Follow</h3>
+    <p>Quando voce precisa linkar um site, mas nao garante a legitimidade do site ao qual voce esta referenciando,ou é um link patrocinado, adicione o <strong>no follow</strong> dentro de rel</p>
+    <p>Caso a pagina que vc esteja querendo referenciar nao esteja na pasta em que seu projeto esta, e sim em uma anterior utilizamos o ../ ele ira voltar para a pagina anterior.</p>
+
+    <hr>
+
+    <h2 >Criando um hyperlink de download. </h2>
+
+    <p>Vamos mostrar como colocar para baixar arquivos como mp3,livro,imagem, etc...</p>
+    <p>Mas note que o site so irar realmente baixar se o arquivo estiver zipado.</p>
+   <a href="Downlaoad/codigo.pdf" download="codigo.pdf" >PDF</a>
+   <a href="Audio/Devaneios.mp3" download="Devaneios.mp3">Devaneios</a>
+   <a href="Audio/devaneios.rar" download="devaneios.rar">Rar</a>
+
+
+</body>
+</html>
